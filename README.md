@@ -24,31 +24,30 @@
   >* PD제어기를 통해 얻은 값들을 PID 속도제어기와 Cascade control 	형식으로 구현한다. 
 
 ## System Architecture
-<p align="center"><img src=" " width="600px"></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/56825900/103440790-fd5fa100-4c8b-11eb-9a0c-0abb8a5f7ffb.jpg" width="600px"></p>  
 
 
 ### Code Overview  
-- 
-- 
-- 
-- 
+- main.c 에 기본적인 센서, cascade control system 관련 코드가 들어있습니다.
+- EWARM IAR을 활용하여 코드를 작성하였습니다.
+- STM32F401RE(Nucleo-F401RE)를 활용하였습니다.
+- ioc 파일은 ST사 관련 IDE로 모두 열 수 있습니다
 
 ### Project scenario
 
-1. 
-2. 
-3. 
-4. 
+1. PC를 통해 flag data(OpenCV, Yolo를 통해 인식된 데이터로, 주행 방향 및 여부 등을 담고 있다.)를 받는다
+2. 각 제어기를 통해 위치, 속도 등을 제어한다.
+3. 오르막과 내리막등 지형에 상관 없이, 사용자의 보행기에 가하는 하중에 상관 없이 cascade control system을 통해 제어한다.
 
 
 ## 프로젝트 결과
 
-<p align="center"><img src=" " width="500px"></p>  
-<p align="center"> 사진1에 대한 설명 </p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/56825900/103440792-fe90ce00-4c8b-11eb-8cf1-be61c8c2a91c.jpg" width="500px"></p>  
+<p align="center"> 사전 모델링 </p>  
 
-<p align="center"><img src=" " width="500px"></p>  
-<p align="center"> 사진2에 대한 설명 </p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/56825900/103440791-fe90ce00-4c8b-11eb-810b-dfebcbe886ce.jpg" width="500px"></p>  
+<p align="center"> 완성작 </p>  
 
-<p align="center"><img src=" " width="500px"></p>  
-<p align="center"> 사진3에 대한 설명 </p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/56825900/103440913-07ce6a80-4c8d-11eb-95bb-435bcf2e8ff3.gif" width="500px"></p>  
+<p align="center"> 실제 주행 영상 </p>  
 
