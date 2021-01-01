@@ -1,6 +1,6 @@
-# 작품 제목
+# Smart Walker
 
-광운대학교 로봇학부 학술소모임 **'BARAM'** 20년도 후반기 Toy Project에 대한 소스코드입니다.  
+광운대학교 로봇학부 학술소모임 **'BARAM'** 20년도 전반기 **'Smart Walker'** Project에 대한 소스코드입니다.  
 
 ## 개발 환경
 |OS|사용 언어|사용 IDE|
